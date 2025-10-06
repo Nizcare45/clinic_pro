@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clinic Pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- Floating background shapes -->
+    <div class="floating-shape"></div>
+    <div class="floating-shape"></div>
+    <div class="floating-shape"></div>
+    <div class="floating-shape"></div>
+    <div class="floating-shape"></div>
+    <div class="floating-shape"></div>
+    <div class="floating-shape"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-stethoscope"></i> Clinic <span
+                    style="color: #fff700;">Pro</span></a>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+                    <li class="nav-item"><a class="btn btn-demo ms-lg-3" href="#" data-bs-toggle="modal"
+                            data-bs-target="#demoModal">Get Free Demo</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>The Smarter Way to Manage Your Clinic</h1>
+            <p>AI-driven, cloud-based clinic management software built for Indian healthcare workflows. From
+                appointments to analytics — manage everything, anywhere.</p>
+            <div class="hero-buttons d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+                <a href="#" class="btn btn-demo" data-bs-toggle="modal" data-bs-target="#demoModal">Get Free Demo</a>
+                <a href="#" class="btn btn-outline-light">Start 7-Day Free Trial</a>
+            </div>
+            <ul class="micro-bullets mt-4">
+                <li>• Paperless EMR & e-Prescriptions</li>
+                <li>• Queue-less Appointments & Video Consults</li>
+                <li>• Smart Billing & Integrated Payments</li>
+            </ul>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://via.placeholder.com/420x300.png?text=📊+App+Dashboard" alt="App Dashboard">
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content p-4"
+                style="background: rgba(255,255,255,0.15); backdrop-filter: blur(150px); border-radius: 25px; color:#fff;">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold" id="demoModalLabel">Ready to Simplify Your Practice?</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="demoForm" class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control custom-input" placeholder="Full Name *" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control custom-input" placeholder="Clinic/Hospital Name *"
+                                required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control custom-input" placeholder="Specialty">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control custom-input" placeholder="Email *" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="tel" class="form-control custom-input" placeholder="Mobile *" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control custom-input" placeholder="City">
+                        </div>
+                        <div class="col-md-12">
+                            <input type="url" class="form-control custom-input" placeholder="Website (optional)">
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control custom-input" rows="4" placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-demo mt-2">Submit Request →</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Clinic Pro -->
+    <section class="why-clinic-pro">
+        <h2 class="text-center fw-bold display-4">
+            Why Clinic <span style="color: #fff700;">Pro</span>
+        </h2>
+
+        <div class="container hero" style="padding:3rem 2rem;">
+            <!-- Visual / Image -->
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/420x300.png?text=📷+Doctor+using+tablet+with+Dashboard"
+                    alt="Doctor using tablet with Clinic Pro Dashboard">
+            </div>
+
+            <!-- Text Content -->
+            <div class="hero-content">
+                <h2>Designed for Doctors. Built for Better Care.</h2>
+                <p>Indian clinics operate in many unique ways — from solo practices to multi-specialty centers. Clinic
+                    Pro adapts to your workflow, not the other way around. Save time, reduce admin load, and focus on
+                    what matters most — your patients.</p>
+
+                <ul class="feature-list">
+                    <li><i class="fas fa-user-md"></i> Easy patient management</li>
+                    <li><i class="fas fa-calendar-check"></i> Streamlined appointments</li>
+                    <li><i class="fas fa-file-invoice-dollar"></i> Smart billing & payments</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features Section -->
+    <section class="core-features py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold display-5 mb-5">
+                Everything Your Clinic Needs, <span style="color: #fff700;">All in One Place</span>
+            </h2>
+
+            <div class="d-flex flex-wrap justify-content-center gap-4">
+                <div class="circle-feature">
+                    <i class="fas fa-tachometer-alt fa-2x"></i>
+                    <p class="mt-2">Role-Based Dashboards</p>
+                </div>
+                <div class="circle-feature">
+                    <i class="fas fa-user-plus fa-2x"></i>
+                    <p class="mt-2">Patient Assignment</p>
+                </div>
+                <div class="circle-feature">
+                    <i class="fas fa-video fa-2x"></i>
+                    <p class="mt-2">Online & Offline Consultations</p>
+                </div>
+                <div class="circle-feature">
+                    <i class="fas fa-ticket-alt fa-2x"></i>
+                    <p class="mt-2">Token & Queue Management</p>
+                </div>
+                <div class="circle-feature">
+                    <i class="fas fa-lock fa-2x"></i>
+                    <p class="mt-2">Medical Locker</p>
+                </div>
+                <div class="circle-feature">
+                    <i class="fas fa-prescription-bottle-alt fa-2x"></i>
+                    <p class="mt-2">One-Tap Prescriptions</p>
+                </div>
+                <div class="circle-feature">
+                    <i class="fas fa-chart-line fa-2x"></i>
+                    <p class="mt-2">Revenue & Billing Management</p>
+                </div>
+                <div class="circle-feature">
+                    <i class="fas fa-vials fa-2x"></i>
+                    <p class="mt-2">Lab Partner Integration</p>
+                </div>
+                <div class="circle-feature">
+                    <i class="fas fa-flask fa-2x"></i>
+                    <p class="mt-2">In-Clinic Lab Management</p>
+                </div>
+            </div>
+
+            <div class="mt-5">
+                <a href="#" class="btn btn-demo btn-lg">Explore All Features</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corporate Clients Section -->
+    <section class="corporate-section py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <!-- Text Content -->
+                <div class="col-lg-6 corporate-left">
+                    <div class="corporate-content p-4">
+                        <h2 class="fw-bold mb-4">
+                            Grow with the <span style="color: #fff700;">Nizcare Corporate Health Network</span>
+                        </h2>
+                        <p class="mb-4">
+                            Join the exclusive Nizcare corporate network and serve employees from over 2,000 corporate
+                            clients. Receive patient referrals, host wellness camps, and expand your clinic’s reach —
+                            without extra marketing.
+                        </p>
+                        <ul class="corporate-benefits list-unstyled mb-4">
+                            <li><i class="fas fa-users fa-fw me-2"></i> More Patient Footfall via Corporate Referrals
+                            </li>
+                            <li><i class="fas fa-check-circle fa-fw me-2"></i> Verified Nizcare Partner Visibility</li>
+                            <li><i class="fas fa-briefcase-medical fa-fw me-2"></i> Opportunities for On-site Health
+                                Camps</li>
+                            <li><i class="fas fa-dollar-sign fa-fw me-2"></i> Zero Marketing Cost</li>
+                        </ul>
+                        <a href="#" class="btn btn-demo btn-lg">Apply for Corporate Access</a>
+                    </div>
+                </div>
+
+                <!-- Visual Placeholder -->
+                <div class="col-lg-6 text-center">
+                    <div class="corporate-image p-3">
+                        <img src="https://via.placeholder.com/500x350.png?text=📷+Corporate+Logos+Collage"
+                            alt="Corporate Network" class="img-fluid floating-img rounded-4 shadow-lg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- How Clinic Pro Helps -->
+    <section class="how-helps-creative py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold display-5 mb-5">
+                Simplify Operations. <span style="color:#fff700;">Amplify Care.</span>
+            </h2>
+
+            <!-- Diagonal Split Layout -->
+            <div class="row g-4 align-items-center">
+                <!-- Large Left Icon Card -->
+                <div class="col-lg-5 d-flex justify-content-center">
+                    <div class="help-card-large p-5 text-center">
+                        <i class="fas fa-stopwatch fa-4x mb-4"></i>
+                        <h4 class="fw-bold">Save Time</h4>
+                        <p>Automate admin work and cut paperwork by 90%.</p>
+                    </div>
+                </div>
+
+                <!-- Right Side Two Small Cards -->
+                <div class="col-lg-7 d-flex flex-column gap-4">
+                    <div class="help-card-small p-4">
+                        <i class="fas fa-money-bill-wave fa-2x mb-3"></i>
+                        <h5 class="fw-bold">Increase Revenue</h5>
+                        <p>Track income, reduce pilferage, and improve profitability.</p>
+                    </div>
+                    <div class="help-card-small p-4">
+                        <i class="fas fa-heart fa-2x mb-3"></i>
+                        <h5 class="fw-bold">Enhance Care</h5>
+                        <p>Access complete patient records and communicate effortlessly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Built for Every Role - Timeline Style -->
+            <h2 class="text-center fw-bold display-6 mt-5 mb-4">
+                <i class="fa-solid fa-brain"></i> Built for <span style="color: #fff700;">Every Role</span>
+            </h2>
+            <div class="timeline d-flex justify-content-between flex-wrap mt-4">
+                <div class="timeline-item text-center">
+                    <div class="role-circle">
+                        <i class="fas fa-user-md fa-2x"></i>
+                    </div>
+                    <h6 class="mt-2 fw-bold">Doctors</h6>
+                    <p class="text-white">Reduce screen fatigue with faster workflows and one-tap prescriptions.</p>
+                </div>
+
+                <div class="timeline-item text-center">
+                    <div class="role-circle">
+                        <i class="fas fa-chart-bar fa-2x"></i>
+                    </div>
+                    <h6 class="mt-2 fw-bold">Clinic Owners</h6>
+                    <p class="text-white">Track revenue and staff performance with real-time analytics.</p>
+                </div>
+
+                <div class="timeline-item text-center">
+                    <div class="role-circle">
+                        <i class="fas fa-calendar-alt fa-2x"></i>
+                    </div>
+                    <h6 class="mt-2 fw-bold">Clinic Managers</h6>
+                    <p class="text-white">Manage appointments and staff scheduling with zero paperwork.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic Pro Mobile App Section -->
+    <section class="mobile-app-section py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- Text Content -->
+                <div class="col-lg-6 app-left">
+                    <h2 class="fw-bold display-5 mb-4">
+                        Your Virtual Clinic — <span style="color:#fff700;">In Your Pocket</span>
+                    </h2>
+                    <p class="mb-4">
+                        Access your dashboard, appointments, and patient records anywhere. Send e-prescriptions, start
+                        video consults, and receive payments on the go.
+                    </p>
+                    <a href="#" class="btn btn-demo btn-lg">Download App</a>
+                </div>
+
+                <!-- Mobile App Visual -->
+                <div class="col-lg-6 text-center">
+                    <div class="mobile-phone p-3">
+                        <img src="https://via.placeholder.com/300x600.png?text=📱+Clinic+Pro+App" alt="Clinic Pro App"
+                            class="img-fluid floating-phone rounded-4 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Partners Section with Swiper -->
+    <section class="partners-section py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold display-6 mb-5">
+                Trusted by Clinics & <span style="color:#fff700;">Corporates Nationwide</span>
+            </h2>
+
+            <!-- Swiper -->
+            <div class="swiper partner-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide partner-logo">
+                        <img src="./assets/nizcare_logo.png" alt="Partner 1">
+                    </div>
+                    <div class="swiper-slide partner-logo">
+                        <img src="./assets/nizcare_logo.png" alt="Partner 2">
+                    </div>
+                    <div class="swiper-slide partner-logo">
+                        <img src="./assets/nizcare_logo.png" alt="Partner 3">
+                    </div>
+                    <div class="swiper-slide partner-logo">
+                        <img src="./assets/nizcare_logo.png" alt="Partner 4">
+                    </div>
+                    <div class="swiper-slide partner-logo">
+                        <img src="./assets/nizcare_logo.png" alt="Partner 5">
+                    </div>
+                    <div class="swiper-slide partner-logo">
+                        <img src="./assets/nizcare_logo.png" alt="Partner 6">
+                    </div>
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination mt-4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold display-5 mb-5">What <span style="color: #fff700;">Doctors Say</span></h2>
+
+            <!-- Carousel -->
+            <div class="testimonial-carousel position-relative mx-auto">
+                <div class="testimonial-card p-4">
+                    <p class="mb-3">“Clinic Pro cut our admin time in half and increased daily revenue.”</p>
+                    <h6 class="fw-bold">– Dr. Kavita, Pediatrics</h6>
+                </div>
+                <!-- Optional rotating icons -->
+                <!-- <div class="doctor-icons">
+                    <i class="fas fa-user-md"></i>
+                    <i class="fas fa-user-md"></i>
+                    <i class="fas fa-user-md"></i>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold display-5 mb-5">Simple Plans. <span style="color: #fff700;">Transparent Pricing.</span>
+            </h2>
+
+            <div class="d-flex flex-wrap justify-content-center gap-4">
+                <!-- Starter Plan -->
+                <div class="pricing-card p-4 text-center">
+                    <h4 class="fw-bold mb-3">Starter</h4>
+                    <p>EMR, Appointments, Basic Billing</p>
+                    <a href="#" class="btn btn-demo mt-3">Start Free Trial</a>
+                </div>
+
+                <!-- Growth Plan -->
+                <div class="pricing-card p-4 text-center">
+                    <h4 class="fw-bold mb-3">Growth</h4>
+                    <p>Teleconsults, Reports, Lab Integration</p>
+                    <a href="#" class="btn btn-demo mt-3">Request Demo</a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card p-4 text-center">
+                    <h4 class="fw-bold mb-3">Enterprise</h4>
+                    <p>Full HMS + Corporate Access</p>
+                    <a href="#" class="btn btn-demo mt-3">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold display-5 mb-5">
+                Frequently Asked <span style="color:#fff700;">Questions</span>
+            </h2>
+
+            <div class="row g-4">
+                <!-- FAQ Item -->
+                <div class="col-md-6">
+                    <div class="faq-card" onclick="toggleFAQ(this)">
+                        <div class="faq-question d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-question-circle fa-2x me-3"></i>
+                                <h5 class="mb-0">Is there a free trial?</h5>
+                            </div>
+                            <i class="faq-toggle-icon fas fa-plus"></i>
+                        </div>
+                        <p class="faq-answer">Yes, 7-day free trial with guided onboarding.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="faq-card" onclick="toggleFAQ(this)">
+                        <div class="faq-question d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-user-md fa-2x me-3"></i>
+                                <h5 class="mb-0">Can I customize for my specialty?</h5>
+                            </div>
+                            <i class="faq-toggle-icon fas fa-plus"></i>
+                        </div>
+                        <p class="faq-answer">Absolutely — 50+ specialty modules.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="faq-card" onclick="toggleFAQ(this)">
+                        <div class="faq-question d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-lock fa-2x me-3"></i>
+                                <h5 class="mb-0">Is data secure?</h5>
+                            </div>
+                            <i class="faq-toggle-icon fas fa-plus"></i>
+                        </div>
+                        <p class="faq-answer">Encrypted storage and role-based access ensure HIPAA-like privacy.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="faq-card" onclick="toggleFAQ(this)">
+                        <div class="faq-question d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-mobile-alt fa-2x me-3"></i>
+                                <h5 class="mb-0">Does it work on mobile?</h5>
+                            </div>
+                            <i class="faq-toggle-icon fas fa-plus"></i>
+                        </div>
+                        <p class="faq-answer">Yes, web and mobile apps for Android & iOS.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section py-5 position-relative">
+        <!-- Floating Shapes for Footer -->
+        <div class="floating-shape footer-shape"
+            style="width: 80px; height: 80px; top: 10%; left: 5%; animation-delay: 1s;"></div>
+        <div class="floating-shape footer-shape"
+            style="width: 100px; height: 100px; bottom: 10%; right: 15%; animation-delay: 2s;"></div>
+
+        <div class="container text-white">
+            <div class="row gy-4">
+                <!-- About -->
+                <div class="col-md-4">
+                    <h5 class="mb-3 fw-bold"><i class="fa-solid fa-stethoscope"></i> Clinic <span
+                            style="color: #fff700;">Pro</span></h5>
+                    <p>AI-driven, cloud-based clinic management software. Manage appointments, prescriptions, billing,
+                        and more — anywhere, anytime.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-2">
+                    <h6 class="mb-3 fw-bold">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Home</a></li>
+                        <li><a href="#" class="footer-link">Features</a></li>
+                        <li><a href="#" class="footer-link">Pricing</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
+                        <li><a href="#" class="footer-link">Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-3">
+                    <h6 class="mb-3 fw-bold">Contact Us</h6>
+                    <p><i class="fas fa-envelope me-2"></i> support@clinicpro.com</p>
+                    <p><i class="fas fa-phone me-2"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> Trichy, India</p>
+                </div>
+
+                <!-- Social -->
+                <div class="col-md-3">
+                    <h6 class="mb-3 fw-bold">Follow Us</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <button class="btn btn-demo mt-3" data-bs-toggle="modal" data-bs-target="#demoModal">Get Free Demo</button>
+                </div>
+            </div>
+
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.2);">
+
+            <div class="text-center small">
+                &copy; 2025 Clinic Pro. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        /* MENU TOGGLE */
+        const menuToggle = document.getElementById('menu-toggle');
+        const navCollapse = document.getElementById('navbarNav');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navCollapse.classList.toggle('show');
+        });
+
+        /* SCROLL-SENSITIVE NAVBAR */
+        let lastScrollTop = 0;
+        const navbarFixed = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // Scroll down -> hide navbar
+                navbarFixed.style.top = '-100px';
+            } else {
+                // Scroll up -> show navbar
+                navbarFixed.style.top = '0';
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
+        });
+
+        // Partner Logo
+        const partnerSwiper = new Swiper('.partner-swiper', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 0,       // Continuous scroll
+                disableOnInteraction: false,
+                pauseOnMouseEnter: false,
+            },
+            speed: 3000,       // Adjust speed for smooth scrolling
+            breakpoints: {
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                992: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                }
+            },
+            pagination: false,  // Remove dots
+        });
+
+        // FAQ
+        function toggleFAQ(card) {
+            const answer = card.querySelector('.faq-answer');
+            const icon = card.querySelector('.faq-toggle-icon');
+
+            answer.classList.toggle('show');
+            card.classList.toggle('active');
+
+            // Toggle icon with rotation
+            if (card.classList.contains('active')) {
+                icon.classList.remove('fa-plus');
+                icon.classList.add('fa-minus');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                icon.classList.remove('fa-minus');
+                icon.classList.add('fa-plus');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</body>
+
+</html>
