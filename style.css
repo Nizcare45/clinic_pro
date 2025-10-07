@@ -6,6 +6,7 @@ body {
     overflow-x: hidden;
     /* background: linear-gradient(120deg, #007bff, #6f42c1); */
     background: linear-gradient(120deg, #1da69a, #13866d);
+
     background-size: 200% 200%;
     animation: gradientMove 8s ease infinite;
     color: #fff;
@@ -132,7 +133,7 @@ body {
 
 .navbar-nav .nav-link {
     color: #fff !important;
-    font-weight: 500;
+    font-weight: 800;
     margin-right: 1.5rem;
     position: relative;
     transition: color 0.3s;
@@ -147,7 +148,7 @@ body {
     width: 0;
     height: 2px;
     /* Thickness of underline */
-    background-color: #ffeb3b;
+    background-color: #fab754;
     transition: width 0.3s ease;
 }
 
@@ -156,12 +157,12 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ffeb3b !important;
+    color: #fab754 !important;
 }
 
 .btn-demo {
-    background-color: #f9a527;
-    color: #000;
+    background-color: #fab754 !important;
+    color: #fff !important;
     font-weight: 600;
     border-radius: 12px;
     padding: 0.5rem 1.2rem;
@@ -170,8 +171,8 @@ body {
 }
 
 .btn-demo:hover {
-    background-color: #fff700;
-    color: #000;
+    background-color: rgb(220, 152, 50);
+    color: #fff;
     transform: translateY(-2px);
 }
 
@@ -394,7 +395,7 @@ body {
 }
 
 .btn-demo {
-    background-color: #ffeb3b;
+    background-color: #fab754;
     color: #000;
     font-weight: 600;
     border-radius: 12px;
@@ -403,7 +404,7 @@ body {
 }
 
 .btn-demo:hover {
-    background-color: #fff700;
+    background-color: #fab754;
     transform: translateY(-2px);
 }
 
@@ -437,7 +438,7 @@ body {
 }
 
 .why-clinic-pro .feature-list li i {
-    color: #ffeb3b;
+    color: #fab754;
     font-size: 1.2rem;
 }
 
@@ -513,7 +514,7 @@ body {
 }
 
 .circle-feature i {
-    color: #fff700;
+    color: #fab754;
 }
 
 .circle-feature p {
@@ -523,7 +524,7 @@ body {
 }
 
 .btn-demo {
-    background-color: #ffeb3b;
+    background-color: #fab754;
     color: #000;
     font-weight: 600;
     border-radius: 12px;
@@ -532,7 +533,7 @@ body {
 }
 
 .btn-demo:hover {
-    background-color: #fff700;
+    background-color: #fab754;
     transform: translateY(-2px);
 }
 
@@ -574,12 +575,12 @@ body {
 }
 
 .corporate-benefits li i {
-    color: #fff700;
+    color: #fab754;
     font-size: 1.2rem;
 }
 
 .btn-demo {
-    background-color: #ffeb3b;
+    background-color: #fab754;
     color: #000;
     font-weight: 600;
     border-radius: 12px;
@@ -588,7 +589,7 @@ body {
 }
 
 .btn-demo:hover {
-    background-color: #fff700;
+    background-color: #fab754;
     transform: translateY(-2px);
 }
 
@@ -645,7 +646,7 @@ body {
 }
 
 .help-card-large i {
-    color: #fff700;
+    color: #fab754;
 }
 
 /* Right Small Cards */
@@ -662,7 +663,7 @@ body {
 }
 
 .help-card-small i {
-    color: #fff700;
+    color: #fab754;
 }
 
 /* Timeline Style for Roles */
@@ -836,7 +837,7 @@ body {
 
 .doctor-icons i {
     font-size: 2rem;
-    color: #fff700;
+    color: #fab754;
     transition: transform 0.3s ease;
 }
 
@@ -868,7 +869,7 @@ body {
 }
 
 .pricing-card h4 {
-    color: #fff700;
+    color: #fab754;
 }
 
 .pricing-card p {
@@ -878,7 +879,7 @@ body {
 }
 
 .btn-demo {
-    background-color: #ffeb3b;
+    background-color: #fab754;
     color: #000;
     font-weight: 600;
     border-radius: 12px;
@@ -887,7 +888,7 @@ body {
 }
 
 .btn-demo:hover {
-    background-color: #fff700;
+    background-color: #fab754;
     transform: translateY(-2px);
 }
 
@@ -928,7 +929,7 @@ body {
 }
 
 .faq-question i {
-    color: #fff700;
+    color: #fab754;
     transition: transform 0.4s ease;
 }
 
@@ -938,7 +939,7 @@ body {
     transition: max-height 0.5s ease, opacity 0.5s ease;
     margin-top: 0.5rem;
     font-size: 0.95rem;
-    color: #ffeb3b;
+    color: #fab754;
     opacity: 0;
 }
 
@@ -949,7 +950,7 @@ body {
 
 .faq-toggle-icon {
     font-size: 1.2rem;
-    color: #fff700;
+    color: #fab754;
     transition: transform 0.4s ease;
 }
 
@@ -972,7 +973,7 @@ body {
 }
 
 .footer-section .footer-link:hover {
-    color: #ffeb3b;
+    color: #fab754;
 }
 
 .footer-section .social-icon {
@@ -991,8 +992,8 @@ body {
 
 .footer-section .social-icon:hover {
     transform: translateY(-5px) scale(1.1);
-    background: #ffeb3b;
-    color: #000;
+    background: #fab754;
+    color: #fff;
     text-decoration: none;
 }
 
